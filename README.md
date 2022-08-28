@@ -52,7 +52,7 @@
 <!-- ABOUT THE PROJECT -->
 ## About The Project
 
-[![Product Name Screen Shot][product-screenshot]](https://example.com)
+<!-- [![Product Name Screen Shot][product-screenshot]](https://example.com) -->
 
 Just a Discord bot made with love by [@davidesidoti](https://github.com/davidesidoti) and [@beebtw](https://github.com/beebtw).
 
