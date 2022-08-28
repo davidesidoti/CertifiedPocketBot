@@ -23,8 +23,6 @@
     <a href="https://github.com/davidesidoti/rage-bot"><strong>Explore the docs »</strong></a>
     <br />
     <br />
-    <a href="https://github.com/davidesidoti/rage-bot">View Demo</a>
-    ·
     <a href="https://github.com/davidesidoti/rage-bot/issues">Report Bug</a>
     ·
     <a href="https://github.com/davidesidoti/rage-bot/issues">Request Feature</a>
