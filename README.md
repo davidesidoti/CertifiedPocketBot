@@ -11,21 +11,21 @@
 <!-- PROJECT LOGO -->
 <br />
 <div align="center">
-  <a href="https://github.com/davidesidoti/rage-bot">
-    <img src="images/rage.png" alt="Logo" width="80" height="80">
+  <a href="https://github.com/davidesidoti/CertifiedPocketBot">
+    <img src="images/pfp.png" alt="Logo" width="80" height="80">
   </a>
 
-<h3 align="center">RAGE BOT</h3>
+<h3 align="center">CertifiedPocketBot</h3>
 
   <p align="center">
-    Rage Bot is the best bot you will ever see ok? That's it bye.
+    CertifiedPocketBot is the best bot you will ever see ok? That's it bye.
     <br />
-    <a href="https://github.com/davidesidoti/rage-bot"><strong>Explore the docs »</strong></a>
+    <a href="https://github.com/davidesidoti/CertifiedPocketBot"><strong>Explore the docs »</strong></a>
     <br />
     <br />
-    <a href="https://github.com/davidesidoti/rage-bot/issues">Report Bug</a>
+    <a href="https://github.com/davidesidoti/CertifiedPocketBot/issues">Report Bug</a>
     ·
-    <a href="https://github.com/davidesidoti/rage-bot/issues">Request Feature</a>
+    <a href="https://github.com/davidesidoti/CertifiedPocketBot/issues">Request Feature</a>
   </p>
 </div>
 
@@ -76,7 +76,7 @@ Still working on it >;(
 - [ ] Voice lines commands
 - [ ] Music commands
 
-See the [open issues](https://github.com/davidesidoti/rage-bot/issues) for a full list of proposed features (and known issues).
+See the [open issues](https://github.com/davidesidoti/CertifiedPocketBot/issues) for a full list of proposed features (and known issues).
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -94,7 +94,7 @@ Distributed under the MIT License. See `LICENSE.txt` for more information.
 <!-- CONTACT -->
 ## Contact
 
-Project Link: [https://github.com/davidesidoti/rage-bot](https://github.com/davidesidoti/rage-bot)
+Project Link: [https://github.com/davidesidoti/CertifiedPocketBot](https://github.com/davidesidoti/CertifiedPocketBot)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -102,16 +102,16 @@ Project Link: [https://github.com/davidesidoti/rage-bot](https://github.com/davi
 
 <!-- MARKDOWN LINKS & IMAGES -->
 <!-- https://www.markdownguide.org/basic-syntax/#reference-style-links -->
-[contributors-shield]: https://img.shields.io/github/contributors/davidesidoti/rage-bot.svg?style=for-the-badge
-[contributors-url]: https://github.com/davidesidoti/rage-bot/graphs/contributors
-[forks-shield]: https://img.shields.io/github/forks/davidesidoti/rage-bot.svg?style=for-the-badge
-[forks-url]: https://github.com/davidesidoti/rage-bot/network/members
-[stars-shield]: https://img.shields.io/github/stars/davidesidoti/rage-bot.svg?style=for-the-badge
-[stars-url]: https://github.com/davidesidoti/rage-bot/stargazers
-[issues-shield]: https://img.shields.io/github/issues/davidesidoti/rage-bot.svg?style=for-the-badge
-[issues-url]: https://github.com/davidesidoti/rage-bot/issues
-[license-shield]: https://img.shields.io/github/license/davidesidoti/rage-bot.svg?style=for-the-badge
-[license-url]: https://github.com/davidesidoti/rage-bot/blob/master/LICENSE.txt
+[contributors-shield]: https://img.shields.io/github/contributors/davidesidoti/CertifiedPocketBot.svg?style=for-the-badge
+[contributors-url]: https://github.com/davidesidoti/CertifiedPocketBot/graphs/contributors
+[forks-shield]: https://img.shields.io/github/forks/davidesidoti/CertifiedPocketBot.svg?style=for-the-badge
+[forks-url]: https://github.com/davidesidoti/CertifiedPocketBot/network/members
+[stars-shield]: https://img.shields.io/github/stars/davidesidoti/CertifiedPocketBot.svg?style=for-the-badge
+[stars-url]: https://github.com/davidesidoti/CertifiedPocketBot/stargazers
+[issues-shield]: https://img.shields.io/github/issues/davidesidoti/CertifiedPocketBot.svg?style=for-the-badge
+[issues-url]: https://github.com/davidesidoti/CertifiedPocketBot/issues
+[license-shield]: https://img.shields.io/github/license/davidesidoti/CertifiedPocketBot.svg?style=for-the-badge
+[license-url]: https://github.com/davidesidoti/CertifiedPocketBot/blob/master/LICENSE.txt
 [linkedin-shield]: https://img.shields.io/badge/-LinkedIn-black.svg?style=for-the-badge&logo=linkedin&colorB=555
 [linkedin-url]: https://linkedin.com/in/linkedin_username
 [product-screenshot]: images/screenshot.png
