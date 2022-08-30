@@ -74,7 +74,6 @@ Still working on it >;(
 
 - [ ] Basic commands
 - [ ] Voice lines commands
-- [ ] Music commands
 
 See the [open issues](https://github.com/davidesidoti/CertifiedPocketBot/issues) for a full list of proposed features (and known issues).
 
