@@ -1,3 +1,4 @@
+from turtle import title
 from dotenv import load_dotenv
 import os
 import discord
@@ -46,6 +47,26 @@ async def _random(ctx, min: int, max: int):
     :param min: The minimum number in the range
     :param max: The maximum number in the range
     """
+
+    if not min or not max:
+        embed = discord.Embed(
+            title='Error', description='You need to specify a minimum and maximum number', color=discord.Color.red())
+        embed.set_author(
+            name='Random', icon_url='https://preview.redd.it/6m34b658f4v71.jpg?width=640&crop=smart&auto=webp&s=a7d0300a0c937b32a2a9c09a37562e21de7ee275')
+        embed.set_footer(
+            text='Made by the incredibly smart and talented Beyza with the help of hashymashy :)')
+        await ctx.send(embed=embed)
+        return
+
+    if type(min) != int or type(max) != int:
+        embed = discord.Embed(
+            title='Error', description='The arguments must be numbers.', color=discord.Color.red())
+        embed.set_author(
+            name='Random', icon_url='https://preview.redd.it/6m34b658f4v71.jpg?width=640&crop=smart&auto=webp&s=a7d0300a0c937b32a2a9c09a37562e21de7ee275')
+        embed.set_footer(
+            text='Made by the incredibly smart and talented Beyza with the help of hashymashy :)')
+        await ctx.send(embed=embed)
+        return
 
     number = random.randint(min, max)
 
