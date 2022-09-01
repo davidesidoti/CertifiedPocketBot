@@ -29,7 +29,7 @@ async def _ping(ctx):
     embed = discord.Embed(
         title='Pong!', description='Pong! I\'m working :)', color=discord.Color.green())
     embed.set_author(
-        name="Working :)", icon_url="https://i.imgflip.com/5uscl9.png")
+        name="v0.0.1", icon_url="https://i.imgflip.com/5uscl9.png")
     embed.set_footer(
         text="Made by the incredibly smart and talented Beyza with the help of hashymashy :)")
     await ctx.send(embed=embed)
