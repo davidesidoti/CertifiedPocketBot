@@ -88,6 +88,7 @@ async def _random(ctx, min, max):
 # ANCHOR - translate command
 @bot.command(name='translate', description='Translate a given text to a given language', brief='Translates a given text')
 async def _translate(ctx, lang, *, text):
+    print('------- ' + text)
     if lang == 'en':
         # Translate the text to English.
         translation = translator.translate(text, dest='en')
