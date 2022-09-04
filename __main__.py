@@ -16,6 +16,7 @@ bot = commands.Bot(command_prefix='!', intents=intents)
 
 # Instantiate the Google Translator.
 translator = googletrans.Translator()
+translator.raise_Exception = True
 
 # Remove the default help command.
 bot.remove_command('help')
