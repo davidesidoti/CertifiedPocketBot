@@ -4,7 +4,6 @@ import discord
 from discord.ext import commands
 import random
 import googletrans
-import google_speech
 
 load_dotenv()
 # Get the API token from the .env file.
