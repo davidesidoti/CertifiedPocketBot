@@ -3,6 +3,7 @@ import os
 import discord
 from discord.ext import commands
 import random
+import googletrans
 
 load_dotenv()
 # Get the API token from the .env file.
@@ -12,6 +13,9 @@ DISCORD_TOKEN = os.getenv('discord_token')
 intents = discord.Intents().all()
 client = discord.Client(intents=intents)
 bot = commands.Bot(command_prefix='!', intents=intents)
+
+# Instantiate the Google Translator.
+translator = googletrans.Translator()
 
 # Remove the default help command.
 bot.remove_command('help')
@@ -26,12 +30,15 @@ async def _ping(ctx):
 
     :param ctx: The context of where the command was used
     """
+    # Create the embed.
     embed = discord.Embed(
         title='Pong!', description='Pong! I\'m working :)', color=discord.Color.green())
     embed.set_author(
         name="v0.0.1", icon_url="https://i.imgflip.com/5uscl9.png")
     embed.set_footer(
         text="Made by the incredibly smart and talented Beyza with the help of hashymashy :)")
+    
+    # Send the embed.
     await ctx.send(embed=embed)
 
 
