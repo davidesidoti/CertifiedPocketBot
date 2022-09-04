@@ -1,3 +1,4 @@
+from unicodedata import name
 from dotenv import load_dotenv
 import os
 import discord
@@ -20,6 +21,20 @@ translator.raise_Exception = True
 
 # Remove the default help command.
 bot.remove_command('help')
+
+
+# ANCHOR - help command
+@bot.command(name='help', help='Displays this message.')
+async def _help(ctx):
+    embed = discord.Embed(
+        title='Help', description='List of commands', color=discord.Color.green())
+    embed.add_field(name='!help', value='Displays this message.', inline=False)
+    embed.add_field(name='!translate',
+                    value='Translates a message to a given language. [English: en; German: de; Turkish: tr; Italian: it;]', inline=False)
+    embed.add_field(
+        name='!random', value='Generates a random number between two given numbers.', inline=False)
+    embed.add_field(name='!ping', value='Pong!', inline=False)
+    await ctx.send(embed=embed)
 
 
 # ANCHOR - ping command
@@ -116,6 +131,18 @@ async def _translate(ctx, lang, *, text):
     elif lang == 'tr':
         # Translate the text to Turkish.
         translation = translator.translate(text, dest='tr')
+        # Create the embed.
+        embed = discord.Embed(
+            title='Translation', description=f'**Original text (from: [{translation.src}]):**\n{translation.origin}\n\n**Translation (to [{translation.dest}]):**\n{translation.text}\n\n**Pronunciation:**\n{translation.pronunciation}', color=discord.Color.green())
+        embed.set_author(
+            name="Translate", icon_url="https://assets.tes.com/magazine-attachments/s3fs-public/styles/article_image_mobile/public/media/image/archived/teacher_cat.jpg?itok=-XzA4-SL")
+        embed.set_footer(
+            text="Made by the incredibly smart and talented Beyza with the help of hashymashy :)")
+        # Send the embed.
+        await ctx.send(embed=embed)
+    elif lang == 'it':
+        # Translate the text to Turkish.
+        translation = translator.translate(text, dest='it')
         # Create the embed.
         embed = discord.Embed(
             title='Translation', description=f'**Original text (from: [{translation.src}]):**\n{translation.origin}\n\n**Translation (to [{translation.dest}]):**\n{translation.text}\n\n**Pronunciation:**\n{translation.pronunciation}', color=discord.Color.green())
