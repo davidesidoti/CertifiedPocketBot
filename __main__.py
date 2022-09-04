@@ -26,9 +26,15 @@ bot.remove_command('help')
 # ANCHOR - help command
 @bot.command(name='help', help='Displays this message.')
 async def _help(ctx):
+    """
+    It creates an embed with a title, description, color, and fields.
+
+    :param ctx: The context of where the command was used
+    """
     embed = discord.Embed(
         title='Help', description='List of commands', color=discord.Color.green())
-    embed.add_field(name='*!help*', value='Displays this message.', inline=False)
+    embed.add_field(
+        name='*!help*', value='Displays this message.', inline=False)
     embed.add_field(name='*!translate*',
                     value='Translates a message to a given language. [English: en; German: de; Turkish: tr; Italian: it;]', inline=False)
     embed.add_field(
@@ -54,7 +60,7 @@ async def _ping(ctx):
     embed = discord.Embed(
         title='Pong!', description='Pong! I\'m working :)', color=discord.Color.green())
     embed.set_author(
-        name="v0.0.1", icon_url="https://i.imgflip.com/5uscl9.png")
+        name="v0.0.2", icon_url="https://i.imgflip.com/5uscl9.png")
     embed.set_footer(
         text="Made by the incredibly smart and talented Beyza with the help of hashymashy :)")
 
@@ -108,6 +114,13 @@ async def _random(ctx, min, max):
 # ANCHOR - translate command
 @bot.command(name='translate', description='Translate a given text to a given language', brief='Translates a given text')
 async def _translate(ctx, lang, *, text):
+    """
+    It translates the text to the language specified by the user.
+
+    :param ctx: The context of the command
+    :param lang: The language you want to translate to
+    :param text: The text to translate
+    """
     if lang == 'en':
         # Translate the text to English.
         translation = translator.translate(text, dest='en')
