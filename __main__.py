@@ -133,6 +133,8 @@ async def _translate(ctx, lang, *, text):
             name="Translate", icon_url="https://assets.tes.com/magazine-attachments/s3fs-public/styles/article_image_mobile/public/media/image/archived/teacher_cat.jpg?itok=-XzA4-SL")
         embed.set_footer(
             text="Made by the incredibly smart and talented Beyza with the help of hashymashy :)")
+        # Send the embed.
+        await ctx.send(embed=embed)
 
 
 @bot.event
