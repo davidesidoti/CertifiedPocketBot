@@ -1,9 +1,11 @@
+from turtle import title
 from dotenv import load_dotenv
 import os
 import discord
 from discord.ext import commands
 import random
 import googletrans
+import google_speech
 
 load_dotenv()
 # Get the API token from the .env file.
@@ -37,14 +39,14 @@ async def _ping(ctx):
         name="v0.0.1", icon_url="https://i.imgflip.com/5uscl9.png")
     embed.set_footer(
         text="Made by the incredibly smart and talented Beyza with the help of hashymashy :)")
-    
+
     # Send the embed.
     await ctx.send(embed=embed)
 
 
 # ANCHOR - random command
 @bot.command(name='random', description='Random number between a given range', brief='Returns a random number')
-async def _random(ctx, min: int, max: int):
+async def _random(ctx, min, max):
     """
     It sends a message to the channel the command was sent in, with a green embed that says "Pong! I'm
     working :)"
@@ -83,6 +85,55 @@ async def _random(ctx, min: int, max: int):
     embed.set_footer(
         text="Made by the incredibly smart and talented Beyza with the help of hashymashy :)")
     await ctx.send(embed=embed)
+
+
+# ANCHOR - translate command
+@bot.command(name='translate', description='Translate a given text to a given language', brief='Translates a given text')
+async def _translate(ctx, lang, *, text):
+    if lang == 'en':
+        # Translate the text to English.
+        translation = translator.translate(text, dest='en')
+        # Create the embed.
+        embed = discord.Embed(
+            title='Translation', description=f'Original text (from: [{translation.src}]):\n{translation.origin}\n\nTranslation (to [{translation.dest}]):\n{translation.text}\n\nPronunciation:\n{translation.pronunciation}', color=discord.Color.green())
+        embed.set_author(
+            name="Translate", icon_url="https://assets.tes.com/magazine-attachments/s3fs-public/styles/article_image_mobile/public/media/image/archived/teacher_cat.jpg?itok=-XzA4-SL")
+        embed.set_footer(
+            text="Made by the incredibly smart and talented Beyza with the help of hashymashy :)")
+        # Send the embed.
+        await ctx.send(embed=embed)
+    elif lang == 'de':
+        # Translate the text to German.
+        translation = translator.translate(text, dest='de')
+        # Create the embed.
+        embed = discord.Embed(
+            title='Translation', description=f'Original text (from: [{translation.src}]):\n{translation.origin}\n\nTranslation (to [{translation.dest}]):\n{translation.text}\n\nPronunciation:\n{translation.pronunciation}', color=discord.Color.green())
+        embed.set_author(
+            name="Translate", icon_url="https://assets.tes.com/magazine-attachments/s3fs-public/styles/article_image_mobile/public/media/image/archived/teacher_cat.jpg?itok=-XzA4-SL")
+        embed.set_footer(
+            text="Made by the incredibly smart and talented Beyza with the help of hashymashy :)")
+        # Send the embed.
+        await ctx.send(embed=embed)
+    elif lang == 'tr':
+        # Translate the text to Turkish.
+        translation = translator.translate(text, dest='tr')
+        # Create the embed.
+        embed = discord.Embed(
+            title='Translation', description=f'Original text (from: [{translation.src}]):\n{translation.origin}\n\nTranslation (to [{translation.dest}]):\n{translation.text}\n\nPronunciation:\n{translation.pronunciation}', color=discord.Color.green())
+        embed.set_author(
+            name="Translate", icon_url="https://assets.tes.com/magazine-attachments/s3fs-public/styles/article_image_mobile/public/media/image/archived/teacher_cat.jpg?itok=-XzA4-SL")
+        embed.set_footer(
+            text="Made by the incredibly smart and talented Beyza with the help of hashymashy :)")
+        # Send the embed.
+        await ctx.send(embed=embed)
+    else:
+        # Create the embed.
+        embed = discord.Embed(
+            title='Error', description='The language you specified is not supported.\n\nAvailable languages:\nEnglish [en];\nGerman [de];\nTurkish [tr];', color=discord.Color.red())
+        embed.set_author(
+            name="Translate", icon_url="https://assets.tes.com/magazine-attachments/s3fs-public/styles/article_image_mobile/public/media/image/archived/teacher_cat.jpg?itok=-XzA4-SL")
+        embed.set_footer(
+            text="Made by the incredibly smart and talented Beyza with the help of hashymashy :)")
 
 
 @bot.event
