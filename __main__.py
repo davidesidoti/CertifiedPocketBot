@@ -94,7 +94,7 @@ async def _translate(ctx, lang, *, text):
         translation = translator.translate(text, dest='en')
         # Create the embed.
         embed = discord.Embed(
-            title='Translation', description=f'Original text (from: [{translation.src}]):\n{translation.origin}\n\nTranslation (to [{translation.dest}]):\n{translation.text}\n\nPronunciation:\n{translation.pronunciation}', color=discord.Color.green())
+            title='Translation', description=f'**Original text (from: [{translation.src}]):**\n{translation.origin}\n\n**Translation (to [{translation.dest}]):**\n{translation.text}\n\n**Pronunciation:**\n{translation.pronunciation}', color=discord.Color.green())
         embed.set_author(
             name="Translate", icon_url="https://assets.tes.com/magazine-attachments/s3fs-public/styles/article_image_mobile/public/media/image/archived/teacher_cat.jpg?itok=-XzA4-SL")
         embed.set_footer(
@@ -106,7 +106,7 @@ async def _translate(ctx, lang, *, text):
         translation = translator.translate(text, dest='de')
         # Create the embed.
         embed = discord.Embed(
-            title='Translation', description=f'Original text (from: [{translation.src}]):\n{translation.origin}\n\nTranslation (to [{translation.dest}]):\n{translation.text}\n\nPronunciation:\n{translation.pronunciation}', color=discord.Color.green())
+            title='Translation', description=f'**Original text (from: [{translation.src}]):**\n{translation.origin}\n\n**Translation (to [{translation.dest}]):**\n{translation.text}\n\n**Pronunciation:**\n{translation.pronunciation}', color=discord.Color.green())
         embed.set_author(
             name="Translate", icon_url="https://assets.tes.com/magazine-attachments/s3fs-public/styles/article_image_mobile/public/media/image/archived/teacher_cat.jpg?itok=-XzA4-SL")
         embed.set_footer(
@@ -118,7 +118,7 @@ async def _translate(ctx, lang, *, text):
         translation = translator.translate(text, dest='tr')
         # Create the embed.
         embed = discord.Embed(
-            title='Translation', description=f'Original text (from: [{translation.src}]):\n{translation.origin}\n\nTranslation (to [{translation.dest}]):\n{translation.text}\n\nPronunciation:\n{translation.pronunciation}', color=discord.Color.green())
+            title='Translation', description=f'**Original text (from: [{translation.src}]):**\n{translation.origin}\n\n**Translation (to [{translation.dest}]):**\n{translation.text}\n\n**Pronunciation:**\n{translation.pronunciation}', color=discord.Color.green())
         embed.set_author(
             name="Translate", icon_url="https://assets.tes.com/magazine-attachments/s3fs-public/styles/article_image_mobile/public/media/image/archived/teacher_cat.jpg?itok=-XzA4-SL")
         embed.set_footer(
