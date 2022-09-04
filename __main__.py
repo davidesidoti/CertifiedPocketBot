@@ -116,7 +116,6 @@ async def _translate(ctx, lang, *, text):
     elif lang == 'tr':
         # Translate the text to Turkish.
         translation = translator.translate(text, dest='tr')
-        print('------- ' + translation)
         # Create the embed.
         embed = discord.Embed(
             title='Translation', description=f'Original text (from: [{translation.src}]):\n{translation.origin}\n\nTranslation (to [{translation.dest}]):\n{translation.text}\n\nPronunciation:\n{translation.pronunciation}', color=discord.Color.green())
