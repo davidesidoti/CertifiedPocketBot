@@ -90,16 +90,6 @@ async def _random(ctx, min, max):
         await ctx.send(embed=embed)
         return
 
-    if type(min) != int or type(max) != int:
-        embed = discord.Embed(
-            title='Error', description='The arguments must be numbers.', color=discord.Color.red())
-        embed.set_author(
-            name='Random', icon_url='https://preview.redd.it/6m34b658f4v71.jpg?width=640&crop=smart&auto=webp&s=a7d0300a0c937b32a2a9c09a37562e21de7ee275')
-        embed.set_footer(
-            text='Made by the incredibly smart and talented Beyza with the help of hashymashy :)')
-        await ctx.send(embed=embed)
-        return
-
     number = random.randint(min, max)
 
     embed = discord.Embed(
