@@ -30,10 +30,14 @@ async def _help(ctx):
         title='Help', description='List of commands', color=discord.Color.green())
     embed.add_field(name='!help', value='Displays this message.', inline=False)
     embed.add_field(name='!translate',
-                    value='Translates a message to a given language. [English: en; German: de; Turkish: tr; Italian: it;]', inline=False)
+                    value='Translates a message to a given language. [English: en; German: de; Turkish: tr; Italian: it;]', inline=True)
     embed.add_field(
         name='!random', value='Generates a random number between two given numbers.', inline=False)
-    embed.add_field(name='!ping', value='Pong!', inline=False)
+    embed.add_field(name='!ping', value='Pong!', inline=True)
+    embed.set_author(
+        name='Help', icon_url='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQFVMaOjMavzlclHBRR7cgTgPjRNHlzUCPswlImvSeSRw&s')
+    embed.set_footer(
+        text='Made by the incredibly smart and talented Beyza with the help of hashymashy :)')
     await ctx.send(embed=embed)
 
 
