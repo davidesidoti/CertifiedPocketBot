@@ -128,7 +128,7 @@ async def _translate(ctx, lang, *, text):
     else:
         # Create the embed.
         embed = discord.Embed(
-            title='Error', description='The language you specified is not supported.\n\nAvailable languages:\nEnglish [en];\nGerman [de];\nTurkish [tr];', color=discord.Color.red())
+            title='Error', description='The language you specified is not supported.\n\n**Available languages:**\nEnglish [en];\nGerman [de];\nTurkish [tr];', color=discord.Color.red())
         embed.set_author(
             name="Translate", icon_url="https://assets.tes.com/magazine-attachments/s3fs-public/styles/article_image_mobile/public/media/image/archived/teacher_cat.jpg?itok=-XzA4-SL")
         embed.set_footer(
