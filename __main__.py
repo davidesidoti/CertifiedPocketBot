@@ -28,12 +28,12 @@ bot.remove_command('help')
 async def _help(ctx):
     embed = discord.Embed(
         title='Help', description='List of commands', color=discord.Color.green())
-    embed.add_field(name='*!help*', value='Displays this message.', inline=True)
+    embed.add_field(name='*!help*', value='Displays this message.', inline=False)
     embed.add_field(name='*!translate*',
-                    value='Translates a message to a given language. [English: en; German: de; Turkish: tr; Italian: it;]', inline=True)
+                    value='Translates a message to a given language. [English: en; German: de; Turkish: tr; Italian: it;]', inline=False)
     embed.add_field(
-        name='*!random*', value='Generates a random number between two given numbers.', inline=True)
-    embed.add_field(name='*!ping*', value='Pong!', inline=True)
+        name='*!random*', value='Generates a random number between two given numbers.', inline=False)
+    embed.add_field(name='*!ping*', value='Pong!', inline=False)
     embed.set_author(
         name='Help', icon_url='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQFVMaOjMavzlclHBRR7cgTgPjRNHlzUCPswlImvSeSRw&s')
     embed.set_footer(
