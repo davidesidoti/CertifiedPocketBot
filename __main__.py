@@ -111,7 +111,7 @@ async def _translate(ctx, lang, *, text):
     :param lang: The language you want to translate to
     :param text: The text to translate
     """
-    if lang == 'en':
+    if lang.lower() == 'en':
         # Translate the text to English.
         translation = translator.translate(text, dest='en')
         # Create the embed.
@@ -123,7 +123,7 @@ async def _translate(ctx, lang, *, text):
             text="Made by the incredibly smart and talented Beyza with the help of hashymashy :)")
         # Send the embed.
         await ctx.send(embed=embed)
-    elif lang == 'de':
+    elif lang.lower() == 'de':
         # Translate the text to German.
         translation = translator.translate(text, dest='de')
         # Create the embed.
@@ -135,7 +135,7 @@ async def _translate(ctx, lang, *, text):
             text="Made by the incredibly smart and talented Beyza with the help of hashymashy :)")
         # Send the embed.
         await ctx.send(embed=embed)
-    elif lang == 'tr':
+    elif lang.lower() == 'tr':
         # Translate the text to Turkish.
         translation = translator.translate(text, dest='tr')
         # Create the embed.
@@ -147,7 +147,7 @@ async def _translate(ctx, lang, *, text):
             text="Made by the incredibly smart and talented Beyza with the help of hashymashy :)")
         # Send the embed.
         await ctx.send(embed=embed)
-    elif lang == 'it':
+    elif lang.lower() == 'it':
         # Translate the text to Turkish.
         translation = translator.translate(text, dest='it')
         # Create the embed.
