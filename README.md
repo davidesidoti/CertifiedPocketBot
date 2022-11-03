@@ -94,7 +94,8 @@ Distributed under the MIT License. See `LICENSE.txt` for more information.
 ## Contact
 
 Project Link: [https://github.com/davidesidoti/CertifiedPocketBot](https://github.com/davidesidoti/CertifiedPocketBot)
-<img src="https://tryhackme-badges.s3.amazonaws.com/hashdeveloper.png" alt="TryHackMe">
+<br><br>
+Written by: <img src="https://tryhackme-badges.s3.amazonaws.com/hashdeveloper.png" alt="TryHackMe">
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
