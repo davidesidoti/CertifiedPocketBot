@@ -1,4 +1,3 @@
-from unicodedata import name
 from dotenv import load_dotenv
 import os
 import discord
@@ -93,7 +92,7 @@ async def _random(ctx, min, max):
     number = random.randint(min, max)
 
     embed = discord.Embed(
-        title='The number is:', description=f'{number}', color=discord.Color.green())
+        title='The number is:', description=f'{str(number)}', color=discord.Color.green())
     embed.set_author(
         name="Random", icon_url="https://preview.redd.it/6m34b658f4v71.jpg?width=640&crop=smart&auto=webp&s=a7d0300a0c937b32a2a9c09a37562e21de7ee275")
     embed.set_footer(
