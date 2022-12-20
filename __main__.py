@@ -89,7 +89,7 @@ async def _random(ctx, min, max):
         await ctx.send(embed=embed)
         return
 
-    number = random.randint(min, max)
+    number = random.randint(int(min), int(max))
 
     embed = discord.Embed(
         title='The number is:', description=f'{str(number)}', color=discord.Color.green())
